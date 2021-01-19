@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Lobster&family=Merriweather:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Merriweather', sans-serif;
+}
+
+
+
+body {
+    height: 100vh;
+    width: 100vw; 
+   
+    font-size: 1.3rem;
+    color: aliceblue;
+    
+    background: linear-gradient(to bottom , #20c0f0cd 20%, #f7318dd2 ) no-repeat;
+    margin: auto;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+#header {
+    margin:auto;
+    text-align: center;
+}
+
+#content {
+    margin: auto;
+    margin-bottom: 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.links {
+    margin: 15px;
+    
+    width: 85vw;
+    height: 3.7rem;
+    
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.357);
+    border: 2.4px solid whitesmoke;
+    outline: none;
+    cursor: pointer;
+    
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+.links:hover {
+    background: white;
+    color: #e70d7380;
+    transition: 0.5s;
+}
+
+#pic {
+    margin: 2.5rem auto 2rem;
+}
+
+h1 {
+    margin: auto;
+
+}
+p {
+    margin: 1rem;
+}
+
+/* #buttSidebar {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    width: 55px;
+    height: 45px;
+    
+    background: transparent;
+    border: none;
+    box-shadow: 2px 2px 6px ;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+} */
+
+@media (min-width: 1025px) {
+
+   
+    #header {
+        margin: 0px;
+        text-align: center;
+        justify-content: center;
+}
+
+    #content {
+        margin: auto;
+        margin-bottom: 120px;
+        flex-direction:initial;
+        text-align: center;
+    }
+
+    .links {
+        
+        width: 15rem;
+        height: 5rem;
+        margin: 3rem;
+
+        border-radius: 0.5rem;
+        box-shadow: 5px 5px 20px  rgba(0, 0, 0, 0.433);
+        border: 1px solid whitesmoke;
+    }
+
+    .links:hover {
+        border: none;
+        box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.172);
+        color: #ee9bc2;
+        transition: 0.7s;
+        font-size: 1.4rem;
+        
+        transition: 0.9s; 
+    }
+
+    #pic {
+        margin: 3rem auto 5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    /* #buttSidebar {
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        width: 65px;
+        height: 50px;
+        transition: 0.7s;
+    }
+
+    #buttSidebar:hover {
+        box-shadow: none;
+        transition: 0.7s; 
+    } */
+       
+} 
+
+
