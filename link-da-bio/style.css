@@ -1,15 +1,13 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Lobster&family=Merriweather:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Lobster&family=Merriweather:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Courgette&display=swap');
 * {
     margin: 0;
     border: 0;
     padding: 0;
     box-sizing: border-box;
     
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Courgette',  sans-serif;
 }
-
-
 
 body {
     height: 100vh;
@@ -30,13 +28,12 @@ body {
 
 
 #header {
-    margin:auto;
+    margin: 2rem auto 0;
     text-align: center;
 }
 
 #content {
-    margin: auto;
-    margin-bottom: 2rem;
+    margin: 2rem auto;
     
     display: flex;
     flex-direction: column;
@@ -47,10 +44,10 @@ body {
 }
 
 .links {
-    margin: 15px;
+    margin: 0.8rem;
     
-    width: 85vw;
-    height: 3.7rem;
+    width: 80vw;
+    height: 3.5rem;
     
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.357);
@@ -60,8 +57,14 @@ body {
     
     background-color: transparent;
     color: aliceblue;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 200;
     transition: 0.5s;
+}
+
+.links.mkt {
+    font-size: 1.2rem;
+    font-weight: 100;
 }
 
 .links:hover {
@@ -71,15 +74,21 @@ body {
 }
 
 #pic {
-    margin: 2.5rem auto 2rem;
+    height: 5.5rem; 
+    width: 5rem;
+    margin-bottom: 1rem;
 }
 
 h1 {
     margin: auto;
-
+    font-weight: 400;
 }
 p {
     margin: 1rem;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Merriweather', serif;
 }
 
 /* #buttSidebar {
@@ -99,7 +108,7 @@ p {
 
 } */
 
-@media (min-width: 1025px) {
+@media (min-width: 900px) {
 
    
     #header {
@@ -109,17 +118,19 @@ p {
 }
 
     #content {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 4rem;
+        
         margin: auto;
-        margin-bottom: 120px;
-        flex-direction:initial;
-        text-align: center;
+        margin-bottom: 11rem;
     }
 
     .links {
         
-        width: 15rem;
-        height: 5rem;
-        margin: 3rem;
+        width: 13.5rem;
+        height: 5.5rem;
+        margin: 0;
 
         border-radius: 0.5rem;
         box-shadow: 5px 5px 20px  rgba(0, 0, 0, 0.433);
@@ -136,7 +147,14 @@ p {
         transition: 0.9s; 
     }
 
+    .links.mkt:hover {
+        font-size: 1.3rem;
+    }
+
+    
     #pic {
+        height: 7.5rem; 
+        width: 7rem;
         margin: 3rem auto 5rem;
     }
 
